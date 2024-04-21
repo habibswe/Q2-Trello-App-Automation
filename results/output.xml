@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.4 on win32)" generated="2024-04-04T12:53:53.373705" rpa="false" schemaversion="5">
+<suite id="s1" name="Trello Application" source="C:\Users\Lenovo\Desktop\Trello Application">
+<suite id="s1-s1" name="Test Suites" source="C:\Users\Lenovo\Desktop\Trello Application\test_suites">
+<suite id="s1-s1-s1" name="Onbording Suite" source="C:\Users\Lenovo\Desktop\Trello Application\test_suites\onbording_suite.robot">
+<test id="s1-s1-s1-t1" name="Scenario: Verify that user should able to signup with valid email and password" line="21">
+<kw name="Open app" owner="AppSetup">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=13</arg>
+<arg>deviceName=Pixel</arg>
+<arg>udid=emulator-5554</arg>
+<arg>appPackage=com.trello</arg>
+<arg>appActivity=com.trello.home.HomeActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-04T12:53:53.646573" elapsed="10.248224"/>
+</kw>
+<status status="PASS" start="2024-04-04T12:53:53.645576" elapsed="10.249221"/>
+</kw>
+<kw name="Check that Welcome page should Appear" owner="onbording_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-04-04T12:54:05.340614" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.widget.TextView[1]</msg>
+<arg>${welcome_page}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-04-04T12:54:03.897054" elapsed="1.443560"/>
+</kw>
+<status status="PASS" start="2024-04-04T12:54:03.895803" elapsed="1.445806"/>
+</kw>
+<kw name="tap on login button" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-04T12:54:05.343781" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-04-04T12:54:06.678822" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.widget.Button</msg>
+<arg>${login_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-04T12:54:05.342606" elapsed="1.336216"/>
+</kw>
+<status status="PASS" start="2024-04-04T12:54:05.341609" elapsed="1.337213"/>
+</kw>
+<tag>passed</tag>
+<status status="PASS" start="2024-04-04T12:53:53.644576" elapsed="13.036267"/>
+</test>
+<doc>Onbording Module Test Case</doc>
+<status status="PASS" start="2024-04-04T12:53:53.415270" elapsed="13.268036"/>
+</suite>
+<status status="PASS" start="2024-04-04T12:53:53.411863" elapsed="13.274438"/>
+</suite>
+<status status="PASS" start="2024-04-04T12:53:53.385676" elapsed="13.304148"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">passed</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Trello Application">Trello Application</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Suites">Trello Application.Test Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Onbording Suite">Trello Application.Test Suites.Onbording Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.4 on win32)" generated="2024-04-19T19:11:07.570607" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Suites" source="C:\Users\Lenovo\Desktop\Trello Application\test_suites">
+<suite id="s1-s1" name="Onbording Suite" source="C:\Users\Lenovo\Desktop\Trello Application\test_suites\onbording_suite.robot">
+<test id="s1-s1-t1" name="scenario: Verify that user should be able to create browswe template" line="53">
+<kw name="Open app" owner="AppSetup">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=13</arg>
+<arg>deviceName=Pixel</arg>
+<arg>udid=emulator-5554</arg>
+<arg>appPackage=com.trello</arg>
+<arg>appActivity=com.trello.home.HomeActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-19T19:11:07.806873" elapsed="11.322150"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:11:07.805597" elapsed="11.323426"/>
+</kw>
+<kw name="Check that Welcome page should Appear" owner="onbording_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-04-19T19:11:20.502979" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.widget.TextView[1]</msg>
+<arg>${welcome_page}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-04-19T19:11:19.130025" elapsed="1.372954"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:11:19.130025" elapsed="1.372954"/>
+</kw>
+<kw name="tap on login button" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:11:20.508046" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.widget.Button'.</msg>
+<msg time="2024-04-19T19:11:22.117855" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View[3]/android.widget.Button</msg>
+<arg>${login_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:11:20.505406" elapsed="1.612449"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:11:20.504409" elapsed="1.613446"/>
+</kw>
+<kw name="tap on sign in with email" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:11:22.120844" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]'.</msg>
+<msg time="2024-04-19T19:11:22.224657" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]</msg>
+<arg>${singin_with_email}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:11:22.118849" elapsed="0.105808"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:11:42.234220" level="INFO">Slept 20 seconds.</msg>
+<arg>${20}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:11:22.224657" elapsed="20.009563"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:11:22.118849" elapsed="20.115371"/>
+</kw>
+<kw name="tap on existing email" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:11:42.236867" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[1]'.</msg>
+<msg time="2024-04-19T19:11:42.423898" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button[1]</msg>
+<arg>${existing_email}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:11:42.235197" elapsed="0.188701"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:02.440111" level="INFO">Slept 20 seconds.</msg>
+<arg>${20}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:11:42.423898" elapsed="20.017207"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:11:42.235197" elapsed="20.205908"/>
+</kw>
+<kw name="tap on maybe later" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:02.442103" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.TextView'.</msg>
+<msg time="2024-04-19T19:12:03.645345" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[2]/android.widget.TextView</msg>
+<arg>${maybe_later}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:02.441105" elapsed="1.204240"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:13.659656" level="INFO">Slept 10 seconds.</msg>
+<arg>${10}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:03.645345" elapsed="10.014311"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:02.441105" elapsed="11.218551"/>
+</kw>
+<kw name="tap on basic board" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:13.663674" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]'.</msg>
+<msg time="2024-04-19T19:12:14.866152" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]</msg>
+<arg>${basic_board}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:13.660684" elapsed="1.205468"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:19.879690" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:14.866152" elapsed="5.013538"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:13.660684" elapsed="6.219006"/>
+</kw>
+<kw name="tap on back" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:19.885304" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Close"]'.</msg>
+<msg time="2024-04-19T19:12:20.037315" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Close"]</msg>
+<arg>${back}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:19.881627" elapsed="0.156690"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:25.047455" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:20.038317" elapsed="5.009138"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:19.880544" elapsed="5.166911"/>
+</kw>
+<kw name="tap on syllabus" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:25.052520" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]'.</msg>
+<msg time="2024-04-19T19:12:26.447168" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]</msg>
+<arg>${syllabus}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:25.049454" elapsed="1.397714"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:31.461128" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:26.447168" elapsed="5.013960"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:25.048462" elapsed="6.412666"/>
+</kw>
+<kw name="tap on back" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:31.465101" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Close"]'.</msg>
+<msg time="2024-04-19T19:12:31.607772" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Close"]</msg>
+<arg>${back}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:31.463031" elapsed="0.144741"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:36.609983" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:31.607772" elapsed="5.002211"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:31.463031" elapsed="5.146952"/>
+</kw>
+<kw name="tap on three bar icon" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:36.616186" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open drawer"]'.</msg>
+<msg time="2024-04-19T19:12:36.704948" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Open drawer"]</msg>
+<arg>${three_bar}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:36.612591" elapsed="0.092357"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:41.717944" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:36.704948" elapsed="5.012996"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:36.611491" elapsed="5.106453"/>
+</kw>
+<kw name=" tap on my Card" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:41.723026" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="com.trello:id/title" and @text="My cards"]'.</msg>
+<msg time="2024-04-19T19:12:41.862017" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.trello:id/title" and @text="My cards"]</msg>
+<arg>${my_card}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:41.720039" elapsed="0.141978"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:51.873809" level="INFO">Slept 10 seconds.</msg>
+<arg>${10}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:41.862017" elapsed="10.011792"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:41.718960" elapsed="10.155844"/>
+</kw>
+<kw name="tap on back button" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:51.879418" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Navigate up"]'.</msg>
+<msg time="2024-04-19T19:12:51.961148" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Navigate up"]</msg>
+<arg>${back_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:51.875310" elapsed="0.085838"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:12:56.971570" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:51.961148" elapsed="5.010422"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:51.875310" elapsed="5.097222"/>
+</kw>
+<kw name="tap on offline boards" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:12:56.977331" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="com.trello:id/title" and @text="Offline boards"]'.</msg>
+<msg time="2024-04-19T19:12:57.091289" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.trello:id/title" and @text="Offline boards"]</msg>
+<arg>${offline}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:12:56.973554" elapsed="0.117735"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:13:07.103678" level="INFO">Slept 10 seconds.</msg>
+<arg>${10}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:12:57.091289" elapsed="10.012389"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:12:56.973554" elapsed="10.130124"/>
+</kw>
+<kw name="tap on back button" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:13:07.108653" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Navigate up"]'.</msg>
+<msg time="2024-04-19T19:13:07.253595" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Navigate up"]</msg>
+<arg>${back_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:13:07.105106" elapsed="0.148489"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:13:12.264687" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:13:07.254592" elapsed="5.010095"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:13:07.104597" elapsed="5.160090"/>
+</kw>
+<kw name="tap on help" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:13:12.270083" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="com.trello:id/title" and @text="Help!"]'.</msg>
+<msg time="2024-04-19T19:13:12.406692" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.trello:id/title" and @text="Help!"]</msg>
+<arg>${help}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:13:12.266095" elapsed="0.140597"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:13:27.420237" level="INFO">Slept 15 seconds.</msg>
+<arg>${15}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:13:12.407681" elapsed="15.012556"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:13:12.264687" elapsed="15.155550"/>
+</kw>
+<kw name="tap on back" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:13:27.426386" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Close"]'.</msg>
+<msg time="2024-04-19T19:13:27.626352" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Close"]</msg>
+<arg>${back}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:13:27.422104" elapsed="0.204248"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:13:32.631122" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:13:27.627377" elapsed="5.003745"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:13:27.422104" elapsed="5.209018"/>
+</kw>
+<kw name="tap on three bar icon" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:13:32.636641" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open drawer"]'.</msg>
+<msg time="2024-04-19T19:13:33.340096" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Open drawer"]</msg>
+<arg>${three_bar}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:13:32.633121" elapsed="0.706975"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:13:38.342957" level="INFO">Slept 5 seconds.</msg>
+<arg>${5}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:13:33.340096" elapsed="5.002861"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:13:32.632125" elapsed="5.710832"/>
+</kw>
+<kw name="tap on settings" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:13:38.348310" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="com.trello:id/title" and @text="Settings"]'.</msg>
+<msg time="2024-04-19T19:13:38.437094" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.trello:id/title" and @text="Settings"]</msg>
+<arg>${settings}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:13:38.345014" elapsed="0.092080"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:13:53.451695" level="INFO">Slept 15 seconds.</msg>
+<arg>${15}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:13:38.437094" elapsed="15.014601"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>0</arg>
+<arg>1100</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>2000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-04-19T19:13:53.451695" elapsed="7.002780"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:13:38.343948" elapsed="22.110527"/>
+</kw>
+<kw name="tap on logout" owner="onbording_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-19T19:14:00.458009" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="android:id/title" and @text="Log out"]'.</msg>
+<msg time="2024-04-19T19:14:01.176080" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="android:id/title" and @text="Log out"]</msg>
+<arg>${logout}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-19T19:14:00.456937" elapsed="0.719143"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-19T19:14:16.177575" level="INFO">Slept 15 seconds.</msg>
+<arg>${15}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-19T19:14:01.176080" elapsed="15.001495"/>
+</kw>
+<status status="PASS" start="2024-04-19T19:14:00.456937" elapsed="15.720638"/>
+</kw>
+<tag>passed</tag>
+<status status="PASS" start="2024-04-19T19:11:07.805597" elapsed="188.371978"/>
+</test>
+<doc>Onbording Module Test Case</doc>
+<status status="PASS" start="2024-04-19T19:11:07.593630" elapsed="188.584968"/>
+</suite>
+<status status="PASS" start="2024-04-19T19:11:07.571514" elapsed="188.608080"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">passed</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Suites">Test Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Onbording Suite">Test Suites.Onbording Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
