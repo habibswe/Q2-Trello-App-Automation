@@ -1,6 +1,6 @@
 # Trello App Automation Robot Framework with Gherkin
 
-![Trello Logo]([trello_logo.png](https://logos-world.net/wp-content/uploads/2021/03/Trello-Logo-700x394.png))
+![Trello Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Flogos-world.net%2Ftrello-logo%2F&psig=AOvVaw3OWRv2HrDvcomPSidvPfSt&ust=1716485224903000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNi09fPjoYYDFQAAAAAdAAAAABAE)
 
 ## Overview
 
